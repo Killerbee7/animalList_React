@@ -2,22 +2,57 @@
   
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 400px;
+  height: 525px;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  box-shadow: 20px 20px rgba(255, 255, 255, 0.718);
+  transition: all .4s ease;
+  background-color:rgb(237, 214, 85);
+
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(253, 253, 253, 0.715);
 }
 
 img {
   border-radius: 5px 5px 0 0;
 }
 
+
 .container {
-  padding: 2px 16px;
+ 
+  text-align: center;
+  letter-spacing: 15px ;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100px;
 }
+.likes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 10px;
+  
+}
+.likes span{
+  font-size: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+  color: rgb(242, 26, 26);
+
+}
+.likes span svg{
+margin-right:5px
+
+}
+
 
 
 .img-wrap {
@@ -26,7 +61,78 @@ img {
 }
 .img-wrap .close {
   position: absolute;
-  top: 2px;
+  font-size: 50px;
   right: 2px;
   z-index: 100;
+  cursor: pointer;
+  background-color: rgb(220, 191, 249);
+  border-radius: 25%;
+}
+
+/* CSS buttons */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }

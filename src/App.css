@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.animal{
+   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(91, 86, 86);
+  
+ 
+}
+
+.header{
+    background-color: antiquewhite;
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+}
+
+.header h1{
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+.header .search{
+height: 35px;
+width: 200px;
+margin-top: 10px;
+}
