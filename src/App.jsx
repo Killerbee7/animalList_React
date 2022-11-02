@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import './Header.css';
 import Header from './Header';
 import Card from './Card';
-import {animals} from './animals.js';
+import { animals } from './animals';
 
 
 class App extends Component{
@@ -12,8 +12,18 @@ class App extends Component{
   state = {
     animals: animals,
   };
-  animalsList= animals.map((animal) => {
-  <Card key={animal.name} name={animal.name} likes={animal.likes} />;
+removeHandler = (name) => {
+  console.log("remove was clicked", name);
+}
+  addHandler = () => {
+   console.log('like was clicked')
+  }
+  animalsList = this.state.animals.map((animal) => {
+    return <Card key={animal.name} 
+    name={animal.name} 
+    likes={animal.likes} 
+    removeCard={() => this.removeHandler(animal.name)} 
+    addLikes={this.addHandler} />;
 });
 
   render() {
@@ -21,10 +31,11 @@ class App extends Component{
   return ( <div>
 
     <Header/>
-    <Card/>
+   {this.animalsList}
   </div>
   )
 };
 };
 
 export default App;
+
