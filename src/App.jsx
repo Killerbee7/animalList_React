@@ -23,6 +23,20 @@ class App extends Component {
     console.log(e.target.value);
   };
 
+  dislikeHandler = (name) => {
+    this.setState((state) =>{
+      const updatedArray=state.animals.map((animal) =>{
+        if (animal.name===name){
+          return {...animal, likes: animal.likes-1};
+        }
+        else{
+          return animal;
+        }
+      });
+      return {animals:updatedArray};
+    });
+  };
+
   addHandler = (name) => {
     this.setState((state) => {
       const updatedArray = state.animals.map((animal) => {
@@ -49,6 +63,7 @@ class App extends Component {
           likes={animal.likes}
           removeCard={() => this.removeHandler(animal.name)}
           addLikes={() => this.addHandler(animal.name)}
+          disLikes ={() => this.dislikeHandler(animal.name)}
         />
       );
     });
