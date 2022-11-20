@@ -121,3 +121,28 @@ export const animals = [
     { name: 'yak', likes: 0 },
     { name: 'zebra', likes: 0 },
   ];
+  export const birds = [
+    { name: 'crow', likes: 0 },
+    { name: 'peacock', likes: 0 },
+    { name: 'dove', likes: 0 },
+    { name: 'sparrow', likes: 0 },
+    { name: 'goose', likes: 0 },
+    { name: 'ostrich', likes: 0 },
+    { name: 'pigeon', likes: 0 },
+    { name: 'turkey', likes: 0 },
+    { name: 'hawk', likes: 0 },
+    { name: 'bald eagle', likes: 0 },
+    { name: 'raven', likes: 0 },
+    { name: 'parrot', likes: 0 },
+    { name: 'flamingo', likes: 0 },
+    { name: 'seagull', likes: 0 },
+    { name: 'swallow', likes: 0 },
+    { name: 'blackbird', likes: 0 },
+    { name: 'penguin', likes: 0 },
+    { name: 'robin', likes: 0 },
+    { name: 'swan', likes: 0 },
+    { name: 'owl', likes: 0 },
+    { name: 'stork', likes: 0 },
+    { name: 'woodpecker', likes: 0 },
+  ];
+  

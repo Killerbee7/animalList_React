@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.animal1{
+   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(112.1deg, rgb(42, 43, 45) 11.4%,rgb(143, 143, 143) 70.2%);
+
+  
+ 
+}
+
+.header{
+    background: linear-gradient(112.1deg, rgb(143, 143, 143) 11.4%, rgb(42, 43, 45) 70.2%); 
+    height: 20vh;
+    color: white ;
+    
+    align-items: center;
+    text-align: center;
+    border: 5px dashed;
+    border:dotted 10px rgb(0, 0, 0);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.header h1{
+    padding-top: 30px;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+.header .search{
+    width: 430px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #d0cdcd;
+    font-family: 'Raleway', sans-serif;
+margin-top: 40px;
+border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+border: dashed 2px;
+
+}
+
+input{
+    font-size: 30px;
+}
+
