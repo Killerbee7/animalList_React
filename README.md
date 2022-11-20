@@ -1,1 +1,1 @@
-dfghj
+The project was an assignment of react class(teacher: Margit).
