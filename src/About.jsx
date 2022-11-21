@@ -3,7 +3,7 @@ import './about.css'
 
 const About = () => {
     return (
-        <div>
+        <div className='aboutme'>
             <h1>About this project</h1>
             <p>The project was an assignment of react class(teacher: Margit) </p>
         </div>

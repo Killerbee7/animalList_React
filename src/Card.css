@@ -42,7 +42,7 @@ letter-spacing: 0;
   margin-top: 10px;
   
 }
-.likes span{
+.container .likes span{
   font-size: 2rem;
 display: flex;
 justify-content: center;
@@ -51,6 +51,7 @@ align-items: center;
 
 }
 .likes span svg{
+  
 margin-right:5px
 
 }
