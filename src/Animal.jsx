@@ -77,7 +77,8 @@ class Animal extends Component {
     return (
       <div>
         <div className="header">
-        <h1>{animalsList.length} Animals List</h1>
+        <h1>{animalsList.length} Lovely Animals in the List</h1>
+        <p>Humans too are animals. </p>
         <input className="search" type="text" placeholder="Type to search" onChange={this.searchHandler} />
         </div>
        

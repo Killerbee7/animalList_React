@@ -29,7 +29,7 @@
 
 .header h1{
     padding-top: 30px;
-    font-size: 55px;
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -39,7 +39,7 @@
     margin: 0 auto;
     background-color: #d0cdcd;
     font-family: 'Raleway', sans-serif;
-margin-top: 40px;
+margin-top: 10px;
 border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 border: dashed 2px;
 
