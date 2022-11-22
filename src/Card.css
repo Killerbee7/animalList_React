@@ -1,12 +1,17 @@
 
-  
+  .card_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+  }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  width: 400px;
-  height: 525px;
+
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
   box-shadow: 20px 20px rgba(255, 255, 255, 0.718);
   transition: all .4s ease;

@@ -79,7 +79,7 @@ class Birds extends Component {
       <div>
         <div className="header">
         <h1>{animalsList.length} Birds in the List</h1>
-        <p>Not everyone of them flies.</p>
+        <p>Not everyone of them fly.</p>
         <input className="search" type="text" placeholder="Type to search" onChange={this.searchHandler} />
         </div>
        

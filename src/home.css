@@ -10,19 +10,25 @@
   margin-left: 1%;
   margin-bottom: 1%;
   column-gap: 1%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .background {
     background: linear-gradient(112.1deg, rgb(42, 43, 45) 11.4%,rgb(143, 143, 143) 70.2%);
+    
+
 }
 .animal_container {
-  background-image: url(https://source.unsplash.com/400x400/?dog);
+  background-image: url(https://source.unsplash.com/600x400/?dog);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
 
   height: 90vh;
-  width: 50%;
+  width: 48%;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: dashed 10px #f8f6f6;
 }
@@ -33,7 +39,7 @@
   background-position: center;
   background-size: cover;
   height: 90vh;
-  width: 50%;
+  width: 48%;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: dashed 10px #ffffff;
 }
@@ -42,12 +48,12 @@
   
 
 .animal_container h1 {
-  font-size: 65px;
+  font-size: 4rem;
   text-align: center;
   cursor: pointer;
-  width: 300px;
   margin-left: 60%;
   margin-top: 75%;
+
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border:solid 5px hsla(0, 95%, 35%, 1);
 }
@@ -67,9 +73,8 @@
 
 .bird_container h1 {
 
-  font-size: 65px;
+  font-size: 4rem;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  width: 300px;
   border:solid 5px hsla(0, 95%, 35%, 1);
   position: absolute;
   background: transparent;
@@ -101,36 +106,41 @@
 }
 
 
-nav {
-  font-size: 30px;
-  letter-spacing: 10px;
-
+.nav_container {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
   flex-direction: row;
   text-decoration: none;
   flex-wrap: wrap;
   text-align: center;
-  max-width: 100%;
+  width: 100vw;
   height: 10vh;
   background: #1e1f25;
 }
 
+
+
+
 .nav1 {
-  font-size: 50px;
+  font-size: 2.12rem;
   text-decoration: none;
   background-color: transparent;
-  padding: 1rem 5rem 1.15rem;
+  padding: 1rem 3rem 1.15rem;
   text-transform: uppercase;
   cursor: pointer;
   color: whitesmoke;
-  min-width: 80px;
+  
 }
 
 .navMenu {
   background-color: transparent;
-  padding-top: 25px;
+  padding-top: 1.8rem;
 }
 
-.nav1:hover {
+
+a.active, .nav1:hover {
   background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
   background-size: 100% 100%;
   color: #27262c;

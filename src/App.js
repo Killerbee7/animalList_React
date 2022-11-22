@@ -3,20 +3,20 @@ import Animal from './Animal'
 import Bird from './Bird';
 import About from './About';
 import Home from './Home';
-import { BrowserRouter,Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter,Routes, Route, NavLink } from "react-router-dom";
 
 const Apps = () => {
     return (
         
             <BrowserRouter>
-        <nav className='nav'>
+        <nav className='nav_container'>
 
             <div className='navMenu'>
         
-           <Link className='nav1' to="/">Home</Link>
-           <Link className='nav1' to="/animals">Animal</Link>
-           <Link className='nav1' to="/birds">Bird</Link>
-           <Link className='nav1' to="/about">About</Link>
+           <NavLink className='nav1' to="/">Home</NavLink>
+           <NavLink className='nav1' to="/animals">Animal</NavLink>
+           <NavLink className='nav1' to="/birds">Bird</NavLink>
+           <NavLink className='nav1' to="/about">About</NavLink>
            </div>
           
 

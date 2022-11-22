@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 
+
 }
 
 .animal1{
@@ -29,13 +30,13 @@
 
 .header h1{
     padding-top: 30px;
-    font-size: 40px;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
 }
 
 .header .search{
-    width: 430px;
-    height: 50px;
+    width: 26rem;
+    height: 3rem;
     margin: 0 auto;
     background-color: #d0cdcd;
     font-family: 'Raleway', sans-serif;
